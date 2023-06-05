@@ -1,26 +1,26 @@
 [
   {
-    "category": "Cultura",
-    "description": "Preguntas relacionadas con arte, literatura, música y otras expresiones culturales."
+    "category": "Ciencia ficción",
+    "description": "Preguntas relacionadas con cosas futuristas."
   },
   {
-    "category": "Deportes",
-    "description": "Preguntas relacionadas con diversos deportes y eventos deportivos."
+    "category": "Entretenimiento",
+    "description": "Preguntas relacionadas con programas de televisión, celebridades y videojuegos."
   },
   {
-    "category": "Arte",
-    "description": "Preguntas relacionadas con pintura, escultura, arquitectura y otras formas de expresión artística."
+    "category": "Gastronomía",
+    "description": "Preguntas relacionadas con platos típicos de diferentes pasies, ingredientes y diferentes recetas."
   },
   {
-    "category": "Cine",
-    "description": "Preguntas relacionadas con películas, directores, actores y otros aspectos del cine."
+    "category": "Salud ",
+    "description": "Preguntas relacionadas sobre nutrición, ejercicio físico y habitos saludables."
   },
   {
-    "category": "Historia",
-    "description": "Preguntas relacionadas con eventos históricos, personajes y períodos importantes."
+    "category": "Mitología",
+    "description": "Preguntas relacionadas sobre dioses y diosas, leyendas populares y criaturas míticas."
   },
   {
-    "category": "Ciencia",
-    "description": "Preguntas relacionadas con diferentes ramas de la ciencia, descubrimientos y avances científicos."
+    "category": "Deporte",
+    "description": "Preguntas relacionadas sobre surf, escalada, paracaidismo, motocross y fútbol."
   }
 ]
