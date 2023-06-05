@@ -1,7 +1,7 @@
 {
-  "category": "videojuegos",
-  "question": "¿Cuál fue primero?",
-  "options": ["Pac-man","Tetris","Pong","Donkey Kong"], 
+  "category": "Cultura de Perú",
+  "question": "¿Los chancas, pueblo con el que se enfrentaron los incas, estuvieron ubicados en lo que ahora es...?",
+  "options": ["Soras(Ayacucho)","Paucarcolla(Puno)","Lucanas(Ayacucho)","Andahuaylas(Apurímac)"], 
   "answer": 3,
-  "explanation": "Pong fue lanzado en 1972 por Atari y fue uno de los primeros juegos arcade exitosos. Fue creado por Allan Alcorn y se basaba en el deporte de tenis de mesa."
+  "explanation": "Esta área forma parte de los Andes centrales del Perú y se encuentra en la sierra sur del país. Durante el período de la expansión inca, los chancas fueron un rival formidable para los incas y se enfrentaron en varias ocasiones en guerras y conflictos. Finalmente, los incas lograron conquistar y absorber a los chancas en su imperio."
 }
