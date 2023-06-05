@@ -1,7 +1,7 @@
 {
-  "category": "Cultura de Perú",
-  "question": "¿Los chancas, pueblo con el que se enfrentaron los incas, estuvieron ubicados en lo que ahora es...?",
-  "options": ["Soras(Ayacucho)","Paucarcolla(Puno)","Lucanas(Ayacucho)","Andahuaylas(Apurímac)"], 
-  "answer": 3,
-  "explanation": "Esta área forma parte de los Andes centrales del Perú y se encuentra en la sierra sur del país. Durante el período de la expansión inca, los chancas fueron un rival formidable para los incas y se enfrentaron en varias ocasiones en guerras y conflictos. Finalmente, los incas lograron conquistar y absorber a los chancas en su imperio."
+  "category": "Gastronomía",
+  "question": "¿Cual de los siguienetes platos es considerado el plato bandera de Perú?",
+  "options": ["Ceviche","Lomo saltado","Rocoto relleno","Causa limeña"], 
+  "answer": 0,
+  "explanation": "El ceviche es uno de los platos más representativos de la gastronomía peruana. Consiste en pescado o mariscos frescos marinados en jugo de limón, cilantro y otros condimentos."
 }
