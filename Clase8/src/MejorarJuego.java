@@ -8,7 +8,7 @@ public class MejorarJuego {
         Scanner scanner = new Scanner(System.in);
         String[] eleccion = {"Piedra", "Papel", "Tijera"};
 
-        System.out.print("Bienvenido al juego de papel, piedra o tijera");
+        System.out.print("Bienvenido al juego de papel, piedra o tijera :)");
 
         while (intento < 3) {
             int opcion = obtenerOpcionUsuario(scanner);
