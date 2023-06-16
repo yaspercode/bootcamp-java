@@ -10,6 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Clase9" target="17" />
       <module name="EjemploSpintBoot" target="17" />
     </bytecodeTargetLevel>
   </component>
