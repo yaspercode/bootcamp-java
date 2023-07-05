@@ -4,15 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner teclado = new Scanner(System.in);
+    static boolean estadoMenu = true;
     public static void main(String[] args) {
-        boolean estadoMenu = true;
-
         while (estadoMenu){
             int opcionSelecionada = elegirOpcionDelMenu();
             ingresarOpcionFigura(opcionSelecionada);
-
         }
-
     }
 
     private static boolean ingresarOpcionFigura(int opcionSelecionada) {
@@ -38,12 +35,13 @@ public class Main {
                 break;
             case 4:
                 System.out.println("Saliendo del programa...");
-                return false;
+                teclado.close();
+                return estadoMenu = false;
             default:
                 System.out.println("Selecciona una opción válida.");
                 break;
         }
-        return true;
+        return estadoMenu = true;
     }
 
     private static void mostrarResultados(PoligonoRegular figura) {

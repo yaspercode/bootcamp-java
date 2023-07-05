@@ -6,11 +6,14 @@
       <list>
         <option value="$PROJECT_DIR$/EjemploSpintBoot/pom.xml" />
         <option value="$PROJECT_DIR$/Clase9/pom.xml" />
+        <option value="$PROJECT_DIR$/Clase11/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/Clase11/pom.xml" />
         <option value="$PROJECT_DIR$/Clase9/pom.xml" />
+        <option value="$PROJECT_DIR$/EjemploSpintBoot/pom.xml" />
       </set>
     </option>
   </component>
