@@ -8,15 +8,15 @@ public class Main {
         boolean estadoMenu = true;
 
         while (estadoMenu){
-            int opciónSelecionada = elegirOpcionDelMenu();
-            ingresarOpcionFigura(opciónSelecionada);
+            int opcionSelecionada = elegirOpcionDelMenu();
+            ingresarOpcionFigura(opcionSelecionada);
 
         }
 
     }
 
-    private static boolean ingresarOpcionFigura(int opciónSelecionada) {
-        switch (opciónSelecionada) {
+    private static boolean ingresarOpcionFigura(int opcionSelecionada) {
+        switch (opcionSelecionada) {
             case 1:
                 System.out.println("Has elegido crear un triángulo.");
                 Triangulo triangulo = new Triangulo();
@@ -24,31 +24,31 @@ public class Main {
                 mostrarResultados(triangulo);
                 break;
             case 2:
-                System.out.println("Has elegido crear un rectangulo.");
+                System.out.println("Has elegido crear un rectángulo.");
                 Rectangulo rectangulo = new Rectangulo();
                 rectangulo.ingresarDatos();
                 mostrarResultados(rectangulo);
                 break;
             case 3:
-                System.out.println("Has elegido crear un circulo.");
+                System.out.println("Has elegido crear un círculo.");
                 Circulo circulo = new Circulo();
                 circulo.ingresarDatos();
-                System.out.println("El Area es: " + circulo.calcularArea());
-                System.out.println("El Perimetro es: " + circulo.calcularPerimetro());
+                System.out.println("El área es: " + circulo.calcularArea());
+                System.out.println("El perímetro es: " + circulo.calcularPerimetro());
                 break;
             case 4:
                 System.out.println("Saliendo del programa...");
                 return false;
             default:
-                System.out.println("Selecione una opción valida");
+                System.out.println("Selecciona una opción válida.");
                 break;
         }
         return true;
     }
 
     private static void mostrarResultados(PoligonoRegular figura) {
-        System.out.println("El Area es: " + figura.calcularArea());
-        System.out.println("El Perimetro es: " + figura.calcularPerimetro());
+        System.out.println("El área es: " + figura.calcularArea());
+        System.out.println("El perímetro es: " + figura.calcularPerimetro());
     }
 
     private static int elegirOpcionDelMenu() {
