@@ -1,13 +1,13 @@
 CREATE DATABASE db_trivia;
 use db_trivia;
-CREATE TABLE categoria(
+CREATE TABLE categories(
 	id int NOT NULL AUTO_INCREMENT,
     category varchar(50) NOT NULL,
     description varchar(100) NOT NULL,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE pregunta(
+CREATE TABLE questions(
 	id int NOT NULL AUTO_INCREMENT,
     category_id int NOT NULL,
     question varchar(100) NOT NULL,
@@ -17,5 +17,21 @@ CREATE TABLE pregunta(
     answer int NOT NULL,
     explanation varchar(200) NOT NULL,
     PRIMARY KEY(id),
-    FOREIGN KEY (category_id) REFERENCES categoria(id)
-)
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+## Ingresar datos
+
+INSERT INTO categories(category, description) VALUES 
+('Ciencia ficción', 'Preguntas relacionadas con cosas futuristas.'),
+('Entretenimiento', 'Preguntas relacionadas con programas de televisión, celebridades y videojuegos.'),
+('Gastronomía', 'Preguntas relacionadas con platos típicos de diferentes pasies, ingredientes y diferentes recetas.');
+
+INSERT INTO questions(category_id, question, options1,options2,options3,answer,explanation) VALUES 
+(3, '¿Cual de los siguienetes platos es considerado el plato bandera de Perú?','Ceviche','Lomo saltado','Rocoto relleno',0,'El ceviche es uno de los platos más representativos de la gastronomía peruana. Consiste en pescado o mariscos frescos marinados en jugo de limón, cilantro y otros condimentos.');
+
+## Consulta
+
+SELECT * 
+FROM categories c 
+INNER JOIN questions q ON c.id = q.category_id
