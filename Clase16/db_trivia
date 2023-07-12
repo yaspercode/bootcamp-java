@@ -1,0 +1,21 @@
+CREATE DATABASE db_trivia;
+use db_trivia;
+CREATE TABLE categoria(
+	id int NOT NULL AUTO_INCREMENT,
+    category varchar(50) NOT NULL,
+    description varchar(100) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE pregunta(
+	id int NOT NULL AUTO_INCREMENT,
+    category_id int NOT NULL,
+    question varchar(100) NOT NULL,
+    options1 varchar(100) NOT NULL,
+    options2 varchar(100) NOT NULL,
+    options3 varchar(100) NOT NULL,
+    answer int NOT NULL,
+    explanation varchar(200) NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY (category_id) REFERENCES categoria(id)
+)
