@@ -1,39 +1,27 @@
 CREATE DATABASE db_trivia;
 use db_trivia;
-CREATE TABLE categories(
-	id int NOT NULL AUTO_INCREMENT,
-    category varchar(50) NOT NULL,
-    description varchar(100) NOT NULL,
-    PRIMARY KEY (id)
+
+CREATE TABLE category(
+	id int AUTO_INCREMENT NOT NULL,
+    name varchar(45),
+    description varchar(255),
+    PRIMARY KEY(id)
 );
 
-CREATE TABLE questions(
-	id int NOT NULL AUTO_INCREMENT,
-    category_id int NOT NULL,
-    question varchar(100) NOT NULL,
-    options1 varchar(100) NOT NULL,
-    options2 varchar(100) NOT NULL,
-    options3 varchar(100) NOT NULL,
-    answer int NOT NULL,
-    explanation varchar(200) NOT NULL,
+CREATE TABLE question(
+	id int AUTO_INCREMENT NOT NULL,
+    description varchar(255),
+    explanation varchar(255),
+    category_id INT,
     PRIMARY KEY(id),
-    FOREIGN KEY (category_id) REFERENCES categories(id)
+    FOREIGN KEY (category_id) REFERENCES category(id)
 );
 
-## Ingresar datos
-
-INSERT INTO categories(category, description) VALUES 
-('Ciencia ficción', 'Preguntas relacionadas con cosas futuristas.'),
-('Entretenimiento', 'Preguntas relacionadas con programas de televisión, celebridades y videojuegos.'),
-('Gastronomía', 'Preguntas relacionadas con platos típicos de diferentes pasies, ingredientes y diferentes recetas.');
-
-INSERT INTO questions(category_id, question, options1,options2,options3,answer,explanation) VALUES 
-(3, '¿Cual de los siguienetes platos es considerado el plato bandera de Perú?','Ceviche','Lomo saltado','Rocoto relleno',0,'El ceviche es uno de los platos más representativos de la gastronomía peruana. Consiste en pescado o mariscos frescos marinados en jugo de limón, cilantro y otros condimentos.');
-
-## Consultas
-
-SELECT * FROM categories
-
-SELECT q.id,c.category,q.question,q.options1,q.options2,q.options3,q.answer,q.explanation 
-FROM categories c 
-INNER JOIN questions q ON c.id = q.category_id
+CREATE TABLE answer(
+	id int AUTO_INCREMENT,
+    description varchar(255),
+    is_correct TINYINT(1),
+    question_id INT,
+    PRIMARY KEY(id),
+    FOREIGN KEY (question_id) REFERENCES question(id)
+);
